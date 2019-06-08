@@ -1,0 +1,83 @@
+<html>
+<head><title></title>
+</head>
+<body>
+<div id="demo1"></div>
+<div id="demo2"></div>
+<div id="demo3"></div>
+<div id="demo4"></div>
+<div id="demo5"></div>
+<div id="demo6"> <button onclick="alertFunction()">Click Me </button> </div>
+<div id="demo7"></div>
+<div id="demo8"></div>
+<div id="demo9"></div>
+
+<script>//script for question 1
+function squre(l)
+{
+  return l*l;
+}
+document.getElementById("demo1").innerHTML = squre(4);
+</script>
+
+<script>//script for question 2
+var num1,num2;
+function addNum(num1,num2)//function for addition
+{
+ return num1+num2
+}
+
+function multiNum(num1,num2)//function for multipication
+{
+ return num1*num2
+}
+function subtractNum(num1,num2)//function for subtraction
+{
+  return num1-num2
+}
+function devideNum(num1,num2)//function for devision
+{
+  return num1/num2
+}
+
+document.getElementById("demo2").innerHTML ="The addition of the two numbers is" + " " + addNum(4,8);//output for question 2 .a
+document.getElementById("demo3").innerHTML ="The multipication of the two numbers is" + " " + multiNum(4,8);//output for question 2 . b
+document.getElementById("demo4").innerHTML ="The subtraction of the two numbers is" + " " + subtractNum(4,8);//output for question 2 .c
+document.getElementById("demo5").innerHTML ="The devision of the two numbers is" + " " + devideNum(4,8);//output for // question 2 .d
+</script>
+
+<script>//script for alert function
+function alertFunction()//function for alert function
+{
+  alert("Hello world");
+}
+</script>
+
+<script>//script for cuboid volume
+function cuboidVolume(lenth,width,height)//function for cunboid volume
+{
+return lenth*width*height
+}
+document.getElementById("demo7").innerHTML ="The volume is" + " " + cuboidVolume(4,2,8);//out put for question 4
+</script>
+
+<script>//script for question 5
+var person = {
+  firstName:"Nimal",lastName:"Raj",age:"15",city:"Kandy"
+};
+document.getElementById("demo8").innerHTML ="My name is" + " " + person.firstName + " " + person.lastName + "."
++ " " + "I'm" + person.age + "years old" + "."+"I live in" + person.city;//output for question 5
+</script>
+
+<script>//script for question 6
+var course = {
+  courseName:"BIT",courseFee:"Rs 150,000",startDate:"12.06.2018",center:"Our Office"
+};
+document.getElementById("demo9").innerHTML ="Course Name:" + " " + course.courseName + "<br>"
++ "Course Fee:" + " " + course.courseFee + "<br>"
++ "Start Date:" + " " + course.startDate + "<br>"
++ "Center:" + " " + course.center;//output for question 6
+</script>
+
+</body>
+</html>
