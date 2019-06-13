@@ -1,0 +1,89 @@
+
+
+<html>
+<head><title></title>
+</head>
+<body>
+<div id="demo1">Great num</div>
+<div id="demo2">Great num</div>
+<div id="demo3"></div>
+<div id="demo4"></div>
+<div id="demo5"></div>
+
+<script>
+  var num1,num2;
+  function greaterNum(num1, num2)
+   {
+      if (num1 > num2)
+       {  return "The greater number of" + " " + num1 + " " + "and" + num2  + " " + "is" +" " + num1;  }
+      else
+       { return "The greater number of" + " " + num1 + " " + "and" + num2  + " " + "is" +" " + num2; }
+   }
+
+document.getElementById("demo1").innerHTML =greaterNum(10,15)
+document.getElementById("demo2").innerHTML =greaterNum(25,50);
+</script>
+
+
+<script>
+function graterNum(a,b,c,d,e) {
+  if (a>b && a>c && a>e && a>d) {
+   return a;
+  } else if (b>c && b>a && b>e && b>d) {
+    return b;
+  }else if (c>a && c>b && c>e && c>d ){
+    return c;
+   }else if (d>c && d>a && d>e && d>b){
+    return d;
+  }else {
+    return e;
+}
+}
+  console.log( graterNum() )
+</script>
+
+<script>
+function marks(m) {
+  if(m>75) {
+    return "A";
+  } else
+  if(m>60){
+    return "B";
+  } else
+  if(m>40){
+    return "C";
+  } else{
+    return "F" ;
+  }
+}
+  document.getElementById("demo4").innerHTML = marks(50);
+
+</script>
+
+<script>
+function score(x) {
+
+  if (x >0 && x<10 ) {
+
+    return "blue";
+
+  } else if (x <20 ){
+
+    return " red";
+
+  } else if (x < 30){
+
+    return "green";
+
+  } else{
+
+    return "no option";
+
+  }
+}
+  document.getElementById("demo5").innerHTML = score(25);
+</script>
+
+</body>
+
+</html>
