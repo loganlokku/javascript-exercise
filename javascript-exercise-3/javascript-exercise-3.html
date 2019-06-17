@@ -1,0 +1,85 @@
+<html>
+<head><title></title>
+</head>
+<body>
+
+<div id="demo1">hllo</div>
+<div id="demo2">hllo</div><br>
+
+<div id="demo03">hllo</div>
+<div id="demo3">hllo</div>
+<div id="demo4">hllo</div>
+<div id="demo5">hllo</div><br>
+
+<div id="demo6" >hllo</div>
+<button onclick="sortedNumbers()" >click here for sort</button><br><br>
+
+<div id="demo06">hllo</div>
+<div id="demo7">hllo</div>
+<div id="demo8">hllo</div>
+<div id="demo9">hllo</div><br>
+
+<div id="demo09">hllo</div>
+<div id="demo10">hllo</div>
+<div id="demo11">hllo</div>
+<div id="demo13">hllo</div><br>
+
+<script>
+var array_name = [ ];
+var array_name = new Array( )
+</script>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo1").innerHTML = myArrayMax(points)
+function myArrayMax(arr) {
+ return Math.max.apply(null, arr);
+}
+document.getElementById("demo2").innerHTML = myArrayMin(points);
+
+function myArrayMin(arr) {
+ return Math.min.apply(null, arr);
+}
+</script>
+
+<script>
+
+
+var fruits = ["Apple","orange","grapes","Strawberry","lemon","woodapple","Banana"];
+document.getElementById("demo03").innerHTML=fruits;
+document.getElementById("demo3").innerHTML=fruits[3];
+document.getElementById("demo4").innerHTML=fruits.length;
+document.getElementById("demo5").innerHTML=fruits.reverse();
+</script>
+
+<script>
+var num = [4,1,8,3,9,12];
+document.getElementById("demo6").innerHTML = num;
+function sortedNumbers() {
+  num.sort(function(a, b){return a-b});
+  document.getElementById("demo6").innerHTML = num;
+}
+</script>
+
+<script>
+var foods = ["rice", "pizza", "sandwich", "rolls"];
+document.getElementById("demo06").innerHTML=foods;
+foods.pop();
+document.getElementById("demo7").innerHTML=foods;
+foods.push("cake");
+document.getElementById("demo8").innerHTML=foods;
+foods.shift()
+document.getElementById("demo9").innerHTML=foods;
+</script>
+
+<script>
+var fruits = ["Apple"];
+document.getElementById("demo09").innerHTML = fruits;
+fruits.unshift("pineapple","lemon");
+ document.getElementById("demo10").innerHTML = fruits;
+ fruits.push("Orange", "Peach");
+  document.getElementById("demo11").innerHTML = fruits;
+</script>
+
+</body>
+</html>
